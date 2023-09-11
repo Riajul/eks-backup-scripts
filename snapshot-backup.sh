@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Specify your AWS region
-AWS_REGION="<>" #Ex: us-east-2
+# Specify your AWS region EX: us-east-2
+AWS_REGION="<>"
 
-# List of instance IDs for which to create snapshots
-INSTANCE_IDS=(<>) #Ex: "i-067a" "i-06fb" "i-04bc"
+# List of instance IDs for which to create snapshots EX: "i-067a" "i-06fb" "i-04bc"
+INSTANCE_IDS=(<>)
 
 # Iterate through the list of instance IDs and create snapshots for their volumes
 for instance_id in "${INSTANCE_IDS[@]}"
